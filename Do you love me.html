@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>DO YOU LOVE ME</h1>
+<button onclick="simp()">Yes</button>
+<button id="y" onmousemove="move()">no</button>
+<p id="x"></p>
+<script>
+    function move(){
+        document.getElementById('y').style.position='relative'
+        document.getElementById('y').style.top= Math.random()*1000 +'px';
+        document.getElementById('y').style.left=Math.random()*1000 +'px'
+    }
+
+    function simp(){
+        document.getElementById('x').innerHTML= "x" +'<img src="https://media.tenor.com/ENKxAAMJuhYAAAAd/pewdiepie-simp-simp.gif" alt="">';
+    }
+</script>
+</body>
+</html>
